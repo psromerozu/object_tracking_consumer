@@ -55,5 +55,6 @@ q.subscribe(:block => true,:manual_ack => true) do |delivery_info, properties, b
 			end
 		end
 	end
+end
 ch.ack(delivery_info.delivery_tag)
 connct.close
